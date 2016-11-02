@@ -43,7 +43,7 @@ int main()
 
     while(cin>>search_key)//perform searches until Ctrl + D entered
     {
-        result = -1;//linearSearch(inputs,search_key);
+        result = linearSearch(inputs,search_key);
 
         cout<<"  "<<search_key<<" was ";
 
