@@ -1,0 +1,20 @@
+tail -18 .gitconfig >> .git/config #update local repo config
+exit 0  # cheap trick   :-)
+
+
+
+#------------------------------------------------------------------------------#
+
+[credential]
+	helper = cache --timeout=7200
+
+[alias]
+	conf = !git config user.name $1 && git config user.email $1@users.noreply.github.com && git remote set-url origin https://$1@github.com/$1/"${PWD##*/}".git && git pom
+
+	ac = "!git add . && git commit"
+	
+	pom = push origin master
+
+	autop = "!while : ;do sleep 10m ;git pom  >>/tmp/autop.log 2>&1 ; done&" 
+
+
