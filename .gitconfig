@@ -1,4 +1,7 @@
 tail -18 .gitconfig >> .git/config #update local repo config
+git conf $1
+git pom
+git autop
 exit 0  # cheap trick   :-)
 
 
