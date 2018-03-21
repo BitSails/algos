@@ -2,7 +2,7 @@
 
 # makefile version 2.1.01.27.2017
 
-CFLAGS=-std=c++14 -c -Wall
+CFLAGS=-std=c++14 -c -g -Wall
 
 # build the searching project
 
